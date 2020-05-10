@@ -3,8 +3,10 @@ let sum = 0;
 
 
 for (let i = 1; i <= n; i++) {
-    sum += n;
+    sum = sum + i;
+   
 
 }
 
-console.log("Result: " + [sum]);
+
+console.log("Result: " + sum);
