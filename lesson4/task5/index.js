@@ -1,23 +1,23 @@
 let m = 3;
 let n = 9;
 let result = 0;
-for (let m = 3; m <= n; m++) {
+for (let i =m; i <= n; i++) {
 
-    result = result + m;
+    
 
 
-    if (m % 2 === 0 && m % 4 === 0) {
-        result + m
+    if (i % 2 === 0 && i % 4 === 0) {
+        result +=i
     }
-    if (m % 3 === 0) {
+    if (i % 3 === 0) {
         result - m
     }
-    if (m % 4 === 0) {
-        result * m
+    if (i % 4 === 0) {
+        result * i
 
     }
-    if (m % 5 === 0) {
-        console.log(m)
+    if (i % 5 === 0) {
+        console.log(i)
     }
 
 
