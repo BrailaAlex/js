@@ -1,7 +1,7 @@
 let m = 3;
 let n = 9;
 let result = 0;
-for (let m = 10; m <= n; m++) {
+for (let m = 3; m <= n; m++) {
 
     result = result + m;
 
