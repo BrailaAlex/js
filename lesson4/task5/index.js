@@ -1,25 +1,27 @@
-let m = 10;
-let n = 50;
+let m = 3;
+let n = 7;
 let result = 0;
 for (let m = 10; m <= n; m++) {
-    
-   
-    if (m % 2 ===0 && m % 4 ===0){
+
+    result = result + m;
+
+
+    if (m % 2 === 0 && m % 4 === 0) {
         result + m
     }
-    if(m % 3 ===0){
+    if (m % 3 === 0) {
         result - m
     }
-    if(m % 4 ===0){
+    if (m % 4 === 0) {
         result * m
-        
+
     }
-    if(m % 5 === 0){
+    if (m % 5 === 0) {
         console.log(m)
     }
-    result = result + m
-    
-    
+
+
+
 }
 
 
@@ -39,9 +41,9 @@ for (let m = 10; m <= n; m++) {
 let result = 100;
 
 if (a % 2 === 0 && a % 4 === 0) {
-    console.log(a + result) 
+    console.log(a + result)
 } else {
-    console.log( result -a) 
+    console.log( result -a)
 
 
 }*/
