@@ -5,7 +5,7 @@ for (i = 1; i <= n; i++) {
     
     sum = sum +i;
    
-    document.write(i = String(i))
+    console.log(i = String(i))
    
     
     
