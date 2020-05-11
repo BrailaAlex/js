@@ -14,7 +14,7 @@ for (let m = 10; m <= n; m++) {
         result * m
         
     }
-    if(m % 5 ===){
+    if(m % 5 === 0){
         console.log(m)
     }
     
