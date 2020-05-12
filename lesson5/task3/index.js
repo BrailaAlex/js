@@ -1,12 +1,12 @@
 function getEvenOdd(number) {
     if (number % 2 === 0) {
-        return console.log("'even'")
+        return "even"
 
     } else {
-        return console.log("'odd'");
-
+        return "odd"
     }
 
 }
-getEvenOdd(10)
+
+
 
