@@ -1,0 +1,11 @@
+{
+	"Print to document": {
+		"scope": "javascript",
+		"prefix": "d",
+		"body": [
+			"document.write('$1');",
+			"$2"
+		],
+		"description": "Log output to document"
+	}
+}
