@@ -33,13 +33,3 @@ for (let i = m; i <= n; i++) {
 
 
 
-/*let a = 10;
-let result = 100;
-
-if (a % 2 === 0 && a % 4 === 0) {
-    console.log(a + result)
-} else {
-    console.log( result -a)
-
-
-}*/
