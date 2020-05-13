@@ -10,12 +10,12 @@ function sum(from, to) {
 
 function compareSums(a, b, c, d) {
     if (sum(a, b) > sum(c, d)) {
-        return console.log(true);
+        return true;
 
     } else {
-        return console.log(false);
+        return false;
 
     }
 
 }
-//compareSum(3, 4, 1, 2)
+//compareSums(3, 4, 1, 2)
