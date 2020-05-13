@@ -1,11 +1,10 @@
-let n =20;
-let sum= '';
 
-let i = 1;
+let n = 20;
+let sum = 0;
 
-while(i>=n){
-    sum+= i;
-   i++;
+for (let i = 1; i <= n; i++) {
+    sum = sum + i + '';
 }
 console.log(sum);
+
 
