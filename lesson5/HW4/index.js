@@ -1,10 +1,10 @@
 function sum(from, to) {
-    let sumab = 0;
+    let sumNumber = 0;
     for (let i = from; i <= to; i++) {
-        sumab += i;
+        sumNumber += i;
 
     }
-    return sumab
+    return sumNumber
 }
 //console.log(sum(1, 5));
 
