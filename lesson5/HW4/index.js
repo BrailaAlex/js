@@ -20,4 +20,4 @@ function compareSum(a,b,c,d){
      }
 
 }
-compareSum(1,2,3,4)
+//compareSum(1,2,3,4)
