@@ -1,34 +1,26 @@
 function getPrimes(num) {
     
     for (let i = 2; i <= num; i++) { 
-
-        for (let j = 2; j < i; j++) { 
-          if (i % j == 0) continue 
+        if(i % 1 ==0 && i % i ==0){
+          console.log(i)
+        }
+       
          
         }
-        return console.log(i)
+       
+        
          
     }
+    getPrimes(10);
+    
     
 
-        }
+        
     
-    console.log(getPrimes(10));
+   
     
 
 
 
 
 
-//let n = 10;
-
-
-//for (let i = 2; i <= n; i++) { 
-
- // for (let j = 2; j < i; j++) { 
-  //  if (i % j == 0) continue  
- // }
-
-  //console.log(i);
-  
-//}
