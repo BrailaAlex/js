@@ -8,7 +8,7 @@ function sum(from, to) {
 }
 //console.log(sum(1, 5));
 
-function compareSum(a, b, c, d) {
+function compareSums(a, b, c, d) {
     if (sum(a, b) > sum(c, d)) {
         return console.log(true);
 
