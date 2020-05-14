@@ -1,13 +1,13 @@
-//let numbers = [1,2,3,4,5];
+//let numbers = [5,2,3,4,5];
 
 function squareArray(arr) {
     if (!Array.isArray(arr)) {
         return null;
 
     }
-    let square = new Array;
+    const square = new Array;
 
-    for (i in arr) {
+    for (let i = 0;i<arr.length; i++) {
         square[i] = Math.pow(arr[i], 2)
     }
     return square;
