@@ -1,4 +1,5 @@
-const numbers = [25, 66, 55, 22, 44, 77]
+//const numbers = [25, 66, 55, 22, 44, 77]
+
 function getArrayBounds(arr) {
     if (!Array.isArray(arr)) {
         return null;
@@ -8,6 +9,6 @@ function getArrayBounds(arr) {
 
 }
 
-arrayBound = getArrayBounds(numbers);
+//arrayBound = getArrayBounds(numbers);
 
-console.log(arrayBound);
+//console.log(arrayBound);
