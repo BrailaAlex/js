@@ -30,20 +30,15 @@ function isPrime(num) {
     //console.log('If is NOT called for: ' + i);
     return true;
 }
-
-
 //input; number
 //output:undefined
 
 
-function getPrimes(n) {
-    for (let i = 1; i <= n; i++) {
 
+function getPrimes(n) {
+    for (let i = 2; i <= n; i++) {
         if (isPrime(i)) {
             console.log(i);
-
         }
-
-
     }
 }
