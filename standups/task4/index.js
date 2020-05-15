@@ -24,17 +24,12 @@ function isPrime(num) {
             //console.log('If is called for: ' + i);
             return false;
         }
-
     }
-
     //console.log('If is NOT called for: ' + i);
     return true;
 }
 //input; number
 //output:undefined
-
-
-
 function getPrimes(n) {
     for (let i = 2; i <= n; i++) {
         if (isPrime(i)) {
