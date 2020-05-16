@@ -1,4 +1,4 @@
-//let numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 
 function reverseArray(arr) {
     if (!Array.isArray(arr)) {
@@ -34,5 +34,5 @@ function reverseArray(arr) {
 
 
 
-//let arr = reverseArray(numbers);
-//console.log(arr);
+let arr = reverseArray(numbers);
+console.log(arr);
