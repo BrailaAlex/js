@@ -1,13 +1,16 @@
 //let numbers = [1, 2, 3, 4, 5];
 
-function reverseArray(arr){
+function reverseArray(arr) {
     if (!Array.isArray(arr)) {
         return null;
     }
-   
+    const reverseArr = arr;
+    
 
 
-   return arr.reverse(); 
+
+
+    return reverseArr.reverse();
 }
 
 
@@ -31,5 +34,5 @@ function reverseArray(arr){
 
 
 
-//let arr = reverseArrey(numbers);
+//let arr = reverseArray(numbers);
 //console.log(arr);
