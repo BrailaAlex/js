@@ -1,4 +1,4 @@
-let numbers = [1, 2, 3, 4, 5];
+//let numbers = [1, 2, 3, 4, 5];
 
 function increaseEvenEl(arr, delta) {
     if (!Array.isArray(arr)) {
@@ -32,6 +32,6 @@ function increaseEvenEl(arr, delta) {
 
 
 
-let arr = increaseEvenEl(numbers, 10);
-console.log(arr);
+//let arr = increaseEvenEl(numbers, 10);
+//console.log(arr);
 
