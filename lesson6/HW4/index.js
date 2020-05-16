@@ -1,29 +1,22 @@
-let numbers = [1, 2, 3, 4, 5];
+//let numbers = [1, 2, 3, 4, 5];
 
 function increaseEvenEl(arr, delta) {
-
-    const evenNumbers = new Array;
-
     if (!Array.isArray(arr)) {
         return null;
     }
+
+    const evenNumbers = new Array;
+   
     for (let i = 0; i < arr.length; i++) {
         
-            evenNumbers[i] = Math.pow(arr[i], delta)
-
+            evenNumbers[i] = arr[i] + delta;
+              
+     
+              
         
-        
-            
-        
-
     }
 
     return evenNumbers
-
-
-
-
-
 
 }
 
@@ -31,6 +24,8 @@ function increaseEvenEl(arr, delta) {
 
 
 
-let arr = increaseEvenEl(numbers, 2);
-console.log(arr);
+
+
+//let arr = increaseEvenEl(numbers, 10);
+//console.log(arr);
 
