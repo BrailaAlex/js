@@ -1,4 +1,4 @@
-//let numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 
 function increaseEvenEl(arr, delta) {
     if (!Array.isArray(arr)) {
@@ -8,11 +8,12 @@ function increaseEvenEl(arr, delta) {
     const evenNumbers = new Array;
    
     for (let i = 0; i < arr.length; i++) {
-        if(i % 2 !==0){
-            evenNumbers[i] = arr[i] + delta;
-        }else if(i % 2 ===0){
+        
+        if(i % 2 ===0){
             evenNumbers[i] = arr[i];
 
+        }else if(i % 2 !==0){
+            evenNumbers[i] = arr[i] + delta;
         }
            
            
@@ -31,6 +32,6 @@ function increaseEvenEl(arr, delta) {
 
 
 
-//let arr = increaseEvenEl(numbers, 2);
-//console.log(arr);
+let arr = increaseEvenEl(numbers, 2);
+console.log(arr);
 
