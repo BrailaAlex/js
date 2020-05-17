@@ -4,21 +4,28 @@ let client = 'John';
 let amount = 50;
 
 
-function withdraw(slients, balances, client, amount){
+let indexArr;
 
-    for(let i =0; i<balances.length; i++){
-        if(amount <= balances[0]){
-            balances[0] - amount;
+function withdraw(slients, balances, client, amount) {
+
+    for (let i = 0; i < clients.length; i++) {
+        if (clients[i] == client) {
+            indexArr = i;
         }
 
-        return balances
     }
-    
-
-
-
+    if (balances[indexArr >= amount]) {
+        return (balances[indexArr] = balances[indexArr] - amount)
+    } else {
+        return -1;
+    }
 
 }
-let balanceMoney = withdraw(clients, balances, clients, amount);
 
-console.log(balanceMoney);
+
+
+
+
+//let balanceMoney = withdraw(clients, balances, clients, amount);
+
+//console.log(balanceMoney);
