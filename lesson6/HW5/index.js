@@ -1,28 +1,30 @@
-const numbers = [1, 2, 3, 4, 5];
 
-function reverseArray(num) {
-    if (!Array.isArray(num)) {
+//let numbers = [1, 2, 3, 4, 5];
+
+function reverseArray(arr) {
+    if (!Array.isArray(arr)) {
         return null;
     }
 
     let reverseArr = [];
 
-    for (let i = num.lenght - 1; i >= 0; i--) {
-        reverseArr.push(num[i]);
-        
-
+    for (let i = 1; i <= arr.length; i++) {
+        reverseArr.push(arr[arr.length - i]);
     }
 
-    
-    return console.log(reverseArr);
-    
+
+
+
+
+    return reverseArr;
+
 
 }
 
 
 
-let reverse1 = reverseArray(numbers);
-console.log(reverse1);
+//let reverse = reverseArray(numbers);
+//console.log(reverse);
 
 
 
@@ -32,4 +34,3 @@ console.log(reverse1);
 
 
 
- 
