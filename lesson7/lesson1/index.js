@@ -1,10 +1,11 @@
-//let numbers = [1, 2, 3, 4, 5, 6];
+let numbers = [1, 2, 3, 4, 5, 6];
 
 
-const getSpecialNumbers = numbers => {
+function getSpecialNumbers(arr) {
+
     let specialNumbers = [];
-        
-        
+
+
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 3 === 0) {
             specialNumbers.push(numbers[i]);
@@ -17,5 +18,5 @@ const getSpecialNumbers = numbers => {
 
 
 
-//let arr = getSpecialNumbers(numbers);
-//console.log(arr);
+let arr = getSpecialNumbers(numbers);
+console.log(arr);
