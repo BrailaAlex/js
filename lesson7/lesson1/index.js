@@ -1,19 +1,18 @@
-//const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const getSpecialNumbers = numbers => {
+function getSpecialNumbers(arr) {
 
-    let SpecialNumbers = [];
+    let specialNum = [];
 
-    function checkIfSpecialNumber(num) {
-        if (num % 3 === 0) {
-            SpecialNumbers.push(num);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
+            specialNum.push(arr[i]);
         }
     }
-    numbers.forEach(checkIfSpecialNumber);
-    return SpecialNumbers;
+
+    return specialNum;
 }
 
 
-
-//let arr = getSpecialNumbers(numbers);
-//console.log(arr);
+let arr = getSpecialNumbers(numbers);
+console.log(arr);
