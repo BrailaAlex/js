@@ -1,18 +1,16 @@
 //const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-function getSpecialNumbers(arr) {
+const getSpecialNumbers = numbers => {
 
-    let specialNum = [];
+    let SpecialNumbers = [];
 
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 3 === 0) {
-            specialNum.push(arr[i]);
-
+    function checkIfSpecialNumber(num) {
+        if (num % 3 === 0) {
+            SpecialNumbers.push(num);
         }
     }
-    return specialNum;
-
+    numbers.forEach(checkIfSpecialNumber);
+    return SpecialNumbers;
 }
 
 
