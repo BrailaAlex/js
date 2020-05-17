@@ -1,4 +1,4 @@
-let numbers = [1, 2, 3, 4, 5, 6];
+//let numbers = [1, 2, 3, 4, 5, 6];
 
 
 function getSpecialNumbers(arr) {
@@ -6,9 +6,9 @@ function getSpecialNumbers(arr) {
     let specialNumbers = [];
 
 
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 3 === 0) {
-            specialNumbers.push(numbers[i]);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
+            specialNumbers.push(arr[i]);
 
         }
     }
@@ -18,5 +18,5 @@ function getSpecialNumbers(arr) {
 
 
 
-let arr = getSpecialNumbers(numbers);
-console.log(arr);
+//let arr = getSpecialNumbers(numbers);
+//console.log(arr);
