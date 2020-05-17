@@ -1,18 +1,19 @@
-let numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
-function reverseArray(arr) {
-    if (!Array.isArray(arr)) {
+function reverseArray(numbers) {
+    if (!Array.isArray(numbers)) {
         return null;
     }
 
-   const reverseArr = new Array();
- 
-  
+    let reverseArr = [];
 
+    for (let i = numbers.lenght - 1; i >= 0; i--) {
+        reverseArr.push(numbers[i]);
 
+    }
 
+    console.log(reverseArr);
 
-    return reverseArr;
 }
 
 
@@ -26,15 +27,4 @@ function reverseArray(arr) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-let arr = reverseArray(numbers);
-console.log(arr);
+ 
