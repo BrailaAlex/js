@@ -12,7 +12,7 @@ function reverseArray(numbers) {
 
     }
 
-    return reverseArr;
+    return reverseArr.reverse;
 
 }
 
