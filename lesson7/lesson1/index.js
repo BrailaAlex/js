@@ -1,22 +1,21 @@
-//let numbers = [1, 2, 3, 4, 5, 6];
-
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function getSpecialNumbers(arr) {
 
-    let specialNumbers = [];
+    let specialNum = [];
 
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 3 === 0) {
-            specialNumbers.push(arr[i]);
+            specialNum.push(arr[i]);
 
         }
     }
-    return specialNumbers;
+    return specialNum;
 
 }
 
 
 
-//let arr = getSpecialNumbers(numbers);
-//console.log(arr);
+let arr = getSpecialNumbers(numbers);
+console.log(arr);
