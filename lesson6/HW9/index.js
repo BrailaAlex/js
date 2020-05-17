@@ -6,7 +6,7 @@ let amount = 50;
 
 let indexArr;
 
-function withdraw(slients, balances, client, amount) {
+function withdraw(clients, balances, client, amount) {
 
     for (let i = 0; i < clients.length; i++) {
         if (clients[i] == client) {
