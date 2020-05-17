@@ -1,23 +1,28 @@
 const numbers = [1, 2, 3, 4, 5];
 
-function reverseArray(numbers) {
-    if (!Array.isArray(numbers)) {
+function reverseArray(num) {
+    if (!Array.isArray(num)) {
         return null;
     }
 
     let reverseArr = [];
 
-    for (let i = numbers.lenght - 1; i >= 0; i--) {
-        reverseArr.push(numbers[i]);
+    for (let i = num.lenght - 1; i >= 0; i--) {
+        reverseArr.push(num[i]);
+        
 
     }
 
-    return reverseArr.reverse;
+    
+    return console.log(reverseArr);
+    
 
 }
 
 
 
+let reverse1 = reverseArray(numbers);
+console.log(reverse1);
 
 
 
