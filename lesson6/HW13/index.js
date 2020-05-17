@@ -1,4 +1,4 @@
-let numbers = [1, 2, 3, 2, 2, 4, 4, 5, 5, 5];
+//let numbers = [1, 2, 3, 2, 2, 4, 4, 5, 5, 5];
 
 function uniqueCount(arr) {
     if (!Array.isArray(arr)) {
@@ -23,5 +23,5 @@ function uniqueCount(arr) {
 
 
 
-let arr1 = uniqueCount(numbers);
-console.log(arr1);
+//let arr1 = uniqueCount(numbers);
+//console.log(arr1);
