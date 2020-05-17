@@ -4,13 +4,15 @@ function reverseArray(arr) {
     if (!Array.isArray(arr)) {
         return null;
     }
-    const reverseArr = arr;
-    
+
+   const reverseArr = new Array();
+ 
+  
 
 
 
 
-    return reverseArr.reverse();
+    return reverseArr;
 }
 
 
