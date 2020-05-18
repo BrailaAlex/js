@@ -1,6 +1,6 @@
 //const numbers = [1, 2, 3, 4, 5];
 
-const increaseEvenEll = (arr, delta) => {
+const increaseEvenEl = (arr, delta) => {
     if (!Array.isArray(arr)) {
         return null;
     }
@@ -18,5 +18,5 @@ const increaseEvenEll = (arr, delta) => {
 
 
 
-//let arr = increaseEvenEll(numbers, 10);
+//let arr = increaseEvenEl(numbers, 10);
 //console.log(arr);
