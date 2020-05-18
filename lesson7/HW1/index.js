@@ -13,22 +13,5 @@ function squareArray(arr) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //let arr = squareArray(numbers);
 //console.log(arr);
