@@ -15,5 +15,6 @@ function arrAverange(arr) {
 
 
 
+
 //let arr = arrAverange(numbers);
 //console.log(arr);
