@@ -1,6 +1,6 @@
 const numbers = [1, 2, 3, 4, 5];
 
-function arrAverange(arr) {
+function arrAverage(arr) {
     if (!Array.isArray(arr)) {
         return null;
 
@@ -16,5 +16,5 @@ function arrAverange(arr) {
 
 
 
-let arr = arrAverange(numbers);
-console.log(arr);
+let arr1 = arrAverage(numbers);
+console.log(arr1);
