@@ -1,6 +1,6 @@
-//const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
-const arrAverange = arr => {
+function arrAverange(arr) {
     if (!Array.isArray(arr)) {
         return null;
 
@@ -15,5 +15,5 @@ const arrAverange = arr => {
 
 
 
-//let arr = arrAverange(numbers);
-//console.log(arr);
+let arr = arrAverange(numbers);
+console.log(arr);
