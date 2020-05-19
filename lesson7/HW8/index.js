@@ -5,6 +5,7 @@ function arrAverange(arr) {
         return null;
 
     }
+    
     return arr.reduce((a, b) => (a + b)) / arr.length;
 
 
