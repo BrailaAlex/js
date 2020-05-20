@@ -25,12 +25,9 @@ const sortContacts = (persons, isAsk = true) => {
     if (!Array.isArray(persons)) { 
         return null;
     }
-    if (isAsk = true){
-        return persons.sort((a, b) => a.name.localeCompare(b.name)); 
-       
-
-
-    }else{
+    if (isAsk === false)
+        return persons.sort((a, b) => b.name.localeCompare(a.name)); 
+          
         return persons.sort((a, b) => b.name.localeCompare(a.name)); 
 
     }
@@ -38,5 +35,5 @@ const sortContacts = (persons, isAsk = true) => {
 
     
 
-}
-console.table(sortContacts(contacts));
+
+//console.table(sortContacts(contacts));
