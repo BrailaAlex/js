@@ -1,19 +1,26 @@
 //'1 + 2' => '1 + 2 = 3'
 const calc = expression => {
-    const a = expression.split(' ');
-   let result;
+    const [a, operator, b] = expression.split(' ');
+    let result;
 
-    switch(a[1]) {
+    switch (operator) {
         case '+':
-            result = Number(a[0]) + +a[2];
+            result = Number(a) + +b;
             break;
         case '-':
-            result =  a[0] - a[1];
+            result = a - b;
+            break;
+
+        case '*':
+            result = a * b;
+            break;
+
+        case '/':
+            result = a / b;
             break;
     }
-    return expression + " = " + result;
+    return ` ${expression} = ${result}`;
 }
 
 
 console.log(calc('1 + 2'));
- 
