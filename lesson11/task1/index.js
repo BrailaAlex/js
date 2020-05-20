@@ -6,11 +6,10 @@ const splitText = (text, n = 10) => {
         return null;
     }
     let newArr = [];
-    let len = 0;
     let startPosition = 0;
 
 
-    
+
     while (true) {
         let chunk = text.substr(startPosition, n);
         if (chunk.length === 0) {
