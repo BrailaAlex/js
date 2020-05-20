@@ -2,7 +2,7 @@
 //output: arr;
 
 
-//let num = 5.255;
+
 const superRound = num =>
    [
     Math.floor(num),
