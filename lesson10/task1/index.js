@@ -19,12 +19,12 @@ const getNaN = arr => {
 }
 
 const getNaNV2 = arr => {
-    arr.filter(el => isNaN(el))
+    return arr.filter(el => isNaN(el))
 
 }
 
 const getIntegers = arr => {
-    arr.filter(el => Number.isInteger(el))
+    return arr.filter(el => Number.isInteger(el))
 
 }
 
