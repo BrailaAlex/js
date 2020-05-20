@@ -21,19 +21,11 @@ const contacts = [
     },
 ];
 
-const sortContacts = (persons, isAsk = true) => {
-    if (!Array.isArray(persons)) { 
-        return null;
-    }
+function sortContacts(arr, isAsk = true) {
+    if (!Array.isArray(arr)) return null;
     if (isAsk === false)
-        return persons.sort((a, b) => b.name.localeCompare(a.name)); 
-          
-        return persons.sort((a, b) => b.name.localeCompare(a.name)); 
+        return arr.sort((a, b) => b.name.localeCompare(a.name));
+    return arr.sort((a, b) => a.name.localeCompare(b.name));
+}
 
-    }
-        
-
-    
-
-
-//console.table(sortContacts(contacts));
+console.log(sortContacts(contacts));
