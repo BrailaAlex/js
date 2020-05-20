@@ -13,7 +13,7 @@ function getRandomNumbers(lengthArr, start, finish) {
     finish = Math.floor(finish);
 
     for (let i = 0; i < lengthArr; i++) {
-        outArr.push(Math.floor(Math.random() * (finish + start) - start));
+        outArr.push(Math.floor(Math.random() * (finish - start) + start));
     }
     return outArr;
 }
