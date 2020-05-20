@@ -28,5 +28,5 @@ const getPeople = obj => {
 }
 
 
-let result = getPeople(rooms);
-console.log(result);
+//let result = getPeople(rooms);
+//console.log(result);
