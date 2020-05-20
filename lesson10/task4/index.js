@@ -9,7 +9,7 @@ const getMaxAbsoluteNumber = arr => {
     };
     const value = arr.map(num => Math.abs(num));
     const maxValue = Math.max(...value);
-    return value;
+    return maxValue;
 
 
 
