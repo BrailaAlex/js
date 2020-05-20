@@ -4,10 +4,12 @@
 const arr = [52, -35, 88, -3, 25, 87, 14, -6, -8, -45];
 
 const getMaxAbsoluteNumber = arr => {
-    if (!Array.isArray(arr) || (arr.length == 0)) {
-        return null;
-    }
-    return Math.max.apply(null, arr);
+    if (!Array.isArray(arr) || (arr.length === 0)) {
+        return null
+    };
+    const value = arr.map(num => Math.abs(num));
+    const maxValue = Math.max(...value);
+    return value;
 
 
 
