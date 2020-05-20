@@ -19,8 +19,8 @@ const calc = expression => {
             result = a / b;
             break;
     }
-    return ` ${expression} = ${result}`;
+    return `${expression} = ${result}`;
 }
 
 
-console.log(calc('1 + 2'));
+console.log(calc('6 - 10'));
