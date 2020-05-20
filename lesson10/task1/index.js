@@ -1,18 +1,19 @@
 let arrNumbers = [1, 2, 3, 5.16, 3.12, NaN, 'Bob', 'Sam', 'Ann',]
 
 const getFiniteNumbers = arr => {
-    arr.filter(el => Number.isFinite(el))
-    
+    return arr.filter(el => Number.isFinite(el))
+
+
 
 }
 
 const getFiniteNumbersV2 = arr => {
-   arr.filter(el => isFinite(el))
-    
+    return arr.filter(el => isFinite(el))
+
 }
- 
+
 const getNaN = arr => {
-    arr.filter(el => Number.isNaN(el))
+    return arr.filter(el => Number.isNaN(el))
 
 
 }
