@@ -1,24 +1,31 @@
-arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let arrNumbers = [1, 2, 3, 5.16, 3.12, NaN, 'Bob', 'Sam', 'Ann',]
 
-function getFiniteNumbers(arr) {
-
-}
-
-function getFiniteNumbersV2(arr) {
+const getFiniteNumbers = arr => {
+    arr.filter(el => Number.isFinite(el))
+    
 
 }
 
-function getNaN(arr) {
+const getFiniteNumbersV2 = arr => {
+   arr.filter(el => isFinite(el))
+    
+}
+ 
+const getNaN = arr => {
+    arr.filter(el => Number.isNaN(el))
+
 
 }
 
-function getNaNV2(arr) {
+const getNaNV2 = arr => {
+    arr.filter(el => isNaN(el))
 
 }
 
-function getIntegers(arr) {
+const getIntegers = arr => {
+    arr.filter(el => Number.isInteger(el))
 
 }
 
-let arr1 = getFiniteNumbers(arrNumbers)
-console.log(arr1);
+//let result = getFiniteNumbers(arrNumbers)
+//console.log(result);
