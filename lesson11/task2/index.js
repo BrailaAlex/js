@@ -21,16 +21,17 @@ const contacts = [
     },
 ];
 
-const sortContacts = (persons, isAsk) => {
-    if (!Array.isArray(persons)) { //если входящие данные-не массив
+const sortContacts = (persons, isAsk = true) => {
+    if (!Array.isArray(persons)) { 
         return null;
     }
     if (isAsk = true){
-        return persons.sort((a, b) => b.name.localeCompare(a.name)); 
+        return persons.sort((a, b) => a.name.localeCompare(b.name)); 
+       
 
 
     }else{
-        return persons.sort((a, b) => a.name.localeCompare(b.name)); 
+        return persons.sort((a, b) => b.name.localeCompare(a.name)); 
 
     }
         
