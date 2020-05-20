@@ -21,20 +21,21 @@ const contacts = [
     },
 ];
 
-const sortContacts = contacts =>{
-    if(!Array.isArray(contacts)){
+const sortContacts = (persons, isAsk) => {
+    if (!Array.isArray(persons)) { //если входящие данные-не массив
         return null;
-    };
-    const result = contacts
-    .sort((a, b) => {
-        return b.name.localeCompare(a.name);
-    });
-
-    return result;
-
-};
+    }
+    if (isAsk = true){
+        return persons.sort((a, b) => b.name.localeCompare(a.name)); 
 
 
+    }else{
+        return persons.sort((a, b) => a.name.localeCompare(b.name)); 
 
+    }
+        
 
-console.log(sortContacts(contacts));
+    
+
+}
+console.table(sortContacts(contacts));
