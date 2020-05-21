@@ -1,4 +1,4 @@
-
+'use strict';
 const message = 'Good job';
 
 const sendMessage = name =>{
