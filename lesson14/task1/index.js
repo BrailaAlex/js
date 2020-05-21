@@ -11,7 +11,7 @@ let message = 'Just learn it';
     
 }
 
-  function setMessage(text){
+  export function setMessage(text){
     message = text;
 }
   
