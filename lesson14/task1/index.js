@@ -9,4 +9,4 @@ const sendMessage = name =>{
     
 }
 
-sendMessage('Tom');
+sendMessage('Ann');
