@@ -1,5 +1,5 @@
 
-
+'use strict';
 
 let message = 'Just learn it';
 
@@ -11,13 +11,13 @@ let message = 'Just learn it';
     
 }
 
- export function setMessage(text){
+  function setMessage(text){
     message = text;
 }
   
 
-sendMessage('Ann');
+//sendMessage('Ann');
 
-setMessage('Good job');
+//setMessage('Good job');
 
-sendMessage('Ann');
+//sendMessage('Ann');
