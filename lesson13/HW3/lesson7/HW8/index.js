@@ -1,6 +1,6 @@
 const numbers = [1, 2, 3, 4, 5];
 
-function arrAverage(arr) {
+export function arrAverage(arr) {
     if (!Array.isArray(arr)) {
         return null;
 
