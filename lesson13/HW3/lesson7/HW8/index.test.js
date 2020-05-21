@@ -12,7 +12,7 @@ it('return average arithmetic', () => {
 });
 
 
-it('return null if result function not array', () => {
+it('return true  if result function not string', () => {
     const result = arrAverage([4, 6, 8]);
     expect(typeof result !== 'string').toEqual(true);
 });
