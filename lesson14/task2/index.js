@@ -1,7 +1,7 @@
 
 
 
-const createMesseger = () => {
+const createMessenger = () => {
 
     let message = 'Just learn it';
     const sender = 'Gromcode';
@@ -25,7 +25,7 @@ const createMesseger = () => {
     };
 
 };
-export default createMesseger;
+export default createMessenger;
 
 const messenger1 = createMessenger();
 
