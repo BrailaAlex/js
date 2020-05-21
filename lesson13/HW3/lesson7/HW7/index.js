@@ -1,7 +1,7 @@
-//const arrNames = ['Alex', 'Bill', 'Bob', 'Ann', 'Sandra', 'Irenn', 'Michel', 'Sinatra'];
-//const text = 'ra';
+const arrNames = ['Alex', 'Bill', 'Bob', 'Ann', 'Sandra', 'Irenn', 'Michel', 'Sinatra'];
+const text = 'ra';
 
-const filterNames = (arrNames, text) => {
+ export const filterNames = (arrNames, text) => {
 
     const arr = arrNames.filter((name) => {
         return name.length > 5 && name.includes(text);
@@ -13,6 +13,6 @@ const filterNames = (arrNames, text) => {
 
 }
 
-//console.log(filterNames(arrNames, text));
+console.log(filterNames(arrNames, text));
 
 
