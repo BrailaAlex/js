@@ -18,6 +18,6 @@ export function setMessage(text){
 
 sendMessage('Ann');
 
-setMessage('Good job');
+setMessage('Good job!');
 
 sendMessage('Ann');
