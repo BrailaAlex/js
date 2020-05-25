@@ -4,10 +4,10 @@
 
 export function createArrayOfFunctions(number) {
     let array = [];
-    if (typeof (number) !== "number") {
-        return null;
-    } else if (number === undefined) {
+    if (number === undefined) {
         return array;
+    } else if (typeof (number) !== "number") {
+        return null;
     } else {
         for (let i = 0; i < number; i++) {
             array[i] = function () {
