@@ -3,7 +3,7 @@
 
 
 export function createArrayOfFunctions(number) {
-    const array = [];
+    let array = [];
     if (typeof (number) !== "number") {
         return null;
     } else if (number === undefined) {
