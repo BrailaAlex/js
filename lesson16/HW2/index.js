@@ -8,6 +8,7 @@ function bar() {
     return foo;
 }
 
-export var foo = bar();
+ var foo = bar();
+ export default foo;
 
 //console.log(foo);
