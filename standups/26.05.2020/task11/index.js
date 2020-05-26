@@ -20,8 +20,8 @@ function addPropertyV2(userData, userId) {
 //output: object;
 
 function addPropertyV3(userData, userId) {
-    let target = {};
-    return Object.assign(userData, obj);
+    return Object.assign({}, userData, { id: userId })
+
 
 }
 
