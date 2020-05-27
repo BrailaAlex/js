@@ -13,9 +13,9 @@ const user = {
 }
 
 
-const deferredHi = defer(user.sayHi, 3000);
+const hi = defer(user.sayHi, 3000);
 
-deferredHi.call({ name: 'Bruce Willis' })
+hi.call({ name: 'Bruce Willis' })
 
 const sayHi = () => {
     console.log('Hello');
