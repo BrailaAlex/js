@@ -28,7 +28,9 @@ function greeting(firstName, lastName) {
 // вызовите ф-цию greeting так, чтобы в консоль вывелось 
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
-greeting.call(`Hello, ${firstName} ${lastName}. Welcome to the ${this.companyName}`)
+greeting.call(company, 'Bob', 'Marley');
+
+
 
 
 /* ===> 3 <=== */
