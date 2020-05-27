@@ -19,7 +19,7 @@ sayStudentName();
  * используйте ф-цию sayName и .bind с нужным объектом
  */
 let sayBruceName = sayName.bind({ name: 'Bruce' });
-sayBruceName()
+sayBruceName();
 
 /* ===> 2 <=== */
 const company = {
@@ -37,7 +37,7 @@ function greeting(firstName, lastName) {
  * specialGreeting не должна принимать ни одного аргумента
  */
 let specialGreeting = greeting.bind(company, ['Bob'], ['Marley']);
-specialGreeting()
+specialGreeting();
 
 
 /* ===> 3 <=== */
@@ -58,7 +58,7 @@ function getPopulation(population) {
  * getUkrainePopulation не должна принимать ни одного аргумента
  */
 let getUkrainePopulation = getPopulation.bind(country, 43000);
-getUkrainePopulation()
+getUkrainePopulation();
 
 
 
