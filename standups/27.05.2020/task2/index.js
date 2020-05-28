@@ -1,45 +1,88 @@
+//1. learn requirements
+//2. create step by step algo (& input/output for funtions) 
+//3. create prototype solution
+//4. testing 
+//5. refactoring
+//6. final solution 
+
+
+
+
 //input: Object, object;
 //output: Boolean;
 
+
 //algo:
-// 1. create a function that takes two objects;
-// 2. convert object to array/string;
-// 3. compare arrays;
-// 4. return boolean;
+// 1. Compare two objects by length if === return true/false;
+// 2. Iterete keys and compare values. If not equal - return false;
 
 
-const obj1 = {
-    name: 'Tom',
-    age: 17,
+
+let obj1 = {
+    age: 20,
+    name: 'Andrey',
+    city: "Kiev",
+    location: "Kiev"
+
 };
 
-const obj2 = {
-    name: 'Bob',
-    age: 17,
-    time: 25
+let obj2 = {
+    age: 20,
+    name: 'Denis',
+    city: "Kiev",
+    location: "Kiev"
+
 };
 
 
+
+/*function compereObjects(obj1, obj2) {
+    if(acc === false){
+        return false;
+    }
+    
+
+    let keys1 = Object.keys(obj1);
+    let keys2 = Object.keys(obj2);
+
+    if(keys1.length !== keys2.length)
+    return false;
+
+    return keys1.reduce((acc, key, index) => {
+        console.log('STEP ' + index);
+        let value1 = obj1.key;
+        let value2 = obj2.key;
+
+        console.log('value1 ' + value1);
+        console.log('value2 ' + value2);
+        
+
+        if(value1 !== value2){
+            console.log('ACC ' + acc);
+            return false;
+        }else{
+            return true;      
+                }
+    }, true);
+
+
+}*/
 
 function compereObjects(obj1, obj2) {
+    let keys1 = Object.keys(obj1);
+    let keys2 = Object.keys(obj2);
 
-    if (obj1[propName].valueOf() === obj2[propName].valueOf()) {
-        if (!deepEqual(obj1[propName], obj2[propName])) { 
-            return false;
-        }else true
+    if (keys1.length !== keys2.length)
+        return false;
 
-    
- 
+    return keys1.reduce((acc, key) => {
+        if (acc === false)
+           return false;
+       return obj1[key]=== obj2[key];
+        
+    }, true);
+
 }
-}
 
 
-//return obj1;
-//return JSON.stringify(obj1) === JSON.stringify(obj2);
-
-
-//console.log(compereObjects());
-//console.log(obj1);
-//console.log(obj2);
-
-
+console.log(compereObjects(obj1, obj2));
