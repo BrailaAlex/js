@@ -1,6 +1,6 @@
 
 
-const timer = {
+export const timer = {
     secondsPassed: 0,
     minsPassed: 0,
     id: 0,
@@ -21,7 +21,7 @@ const timer = {
 
 
     getTime() {
-        return `${this.minsPassed}: ${this.secondsPassed}`;
+        return `${this.minsPassed}:${this.secondsPassed}`;
 
 
     },
@@ -36,4 +36,4 @@ const timer = {
     }
 }
 console.log(timer.getTime());
-console.log(timer.stopTimer());
+
