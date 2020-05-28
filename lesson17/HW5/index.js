@@ -1,6 +1,6 @@
 
 
-export const timer = {
+ const timer = {
     secondsPassed: 0,
     minsPassed: 0,
     id: 0,
@@ -21,10 +21,12 @@ export const timer = {
 
 
     getTime() {
-        return `${this.minsPassed}:${this.secondsPassed}`;
+        
+        return (`${this.minsPassed}:${this.secondsPassed < 10 ? "0" + this.secondsPassed:this.secondsPassed}`)
+            
+             },
 
 
-    },
     stopTimer() {
         clearInterval(this.id)
 
