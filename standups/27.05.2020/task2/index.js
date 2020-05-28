@@ -85,4 +85,4 @@ function compareObjects(obj1, obj2) {
 }
 
 
-console.log(compareObjects(obj1, obj2));
+//console.log(compareObjects(obj1, obj2));
