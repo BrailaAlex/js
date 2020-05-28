@@ -1,16 +1,15 @@
 
 
 
-export function sumOfSquares() {
-    return [].map.apply(arguments, [(el) => {
-        return el * el;
+ export function sumOfSquares() {
+    return [].reduce.apply(arguments, [(acc, el) => {
+        return acc + el * el;
     }, 0]);
 
 
 }
 
-//console.log(sumOfSquares(1, 2, 3, 4));
-
+//console.log(sumOfSquares(2, 2));
 
 
 
