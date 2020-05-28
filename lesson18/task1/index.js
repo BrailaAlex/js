@@ -1,6 +1,6 @@
 'use strict';
 
-export const event = {
+ export const event = {
     message: 'Well come to the party!',
     guests: [
         { name: 'John', age: 18, email: 'joni_li@server.com' },
@@ -15,7 +15,7 @@ export const event = {
         return this.guests
             .filter(({ age }) => age >= 18)
             .map(({ name, email }) => ({
-                email, message: `Hi ${name}, ${this.message}`
+                email, message: `Dear ${name}! ${this.message}`
 
             }));
         
