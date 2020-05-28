@@ -6,11 +6,14 @@ export function saveCalls(memoryFunction) {
 
     withMemory.calls = [];
 
-    function withMemory(...arguments) {
-        withMemory.calls.push(arguments);
+    function withMemory(...argums) {
+        withMemory.calls.push(argums);
 
-        return memoryFunction.apply(this, arguments);
+        return memoryFunction.call(this, arguments);
     }
+
+
+
     return withMemory;
 };
 
@@ -18,13 +21,10 @@ export function saveCalls(memoryFunction) {
 function test(a, b) {
     return Math.sqrt(a * a + b * b);
 };
-
-
 const testWithMemory = saveCalls(test);
-
-testWithMemory(4, 2, 5, 10, 20, 30);
-testWithMemory(9, 1, 6, 12, 14, 18);
-testWithMemory('a', 'b', 'c', 'd', 'e', 'f');
+testWithMemory(32, 7, 9, 15, 45, 47, 47);
+testWithMemory(4, 15, 16, 17, 18);
+testWithMemory('a', 'b', 'c', 'd', 'f');
 
 console.table(testWithMemory.calls);
 
@@ -36,7 +36,5 @@ const user = {
 };
 
 const methodWithMemory = saveCalls(user.sayHi);
-
 console.log(methodWithMemory.apply({ name: 'Tom' }));
-
-console.log(methodWithMemory.calls);
+console.log(methodWithMemory.calls) 
