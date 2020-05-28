@@ -2,7 +2,7 @@
 // output: func;
 
 
-function saveCalls(memoryFunction) {
+export function saveCalls(memoryFunction) {
 
     withMemory.calls = [];
 
