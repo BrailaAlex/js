@@ -36,7 +36,7 @@ let obj2 = {
 
 
 
-/*function compereObjects(obj1, obj2) {
+/*function compareObjects(obj1, obj2) {
     if(acc === false){
         return false;
     }
@@ -68,7 +68,7 @@ let obj2 = {
 
 }*/
 
-function compereObjects(obj1, obj2) {
+function compareObjects(obj1, obj2) {
     let keys1 = Object.keys(obj1);
     let keys2 = Object.keys(obj2);
 
