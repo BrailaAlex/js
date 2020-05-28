@@ -2,14 +2,14 @@
 // output: func;
 
 
-export function saveCalls(memory) {
+export function saveCalls(memoryFunction) {
 
     withMemory.calls = [];
 
     function withMemory(...arguments) {
         withMemory.calls.push(arguments);
 
-        return memory.apply(this, arguments);
+        return memoryFunction.apply(this, arguments);
     }
     return withMemory;
 };
