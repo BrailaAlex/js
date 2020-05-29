@@ -20,7 +20,7 @@ User.prototype.setAge = function (newAge) {
     if(newAge >= 25){
         this.requestNewPhoto();
     }
-
+    return newAge;
 
 };
 
