@@ -1,10 +1,10 @@
 
- export function User(name, age) {
+export function User(name, age) {
     this.name = name;
     this.age = age;
 }
 User.prototype.sayHi = function () {
-    return console.log(`Hi,I am ${this.name}`);
+    console.log(`Hi, I am ${this.name}`);
 };
 
 User.prototype.requestNewPhoto = function () {
@@ -13,11 +13,11 @@ User.prototype.requestNewPhoto = function () {
 };
 
 User.prototype.setAge = function (newAge) {
-    if(newAge < 0){
+    if (newAge < 0) {
         return false
     };
     this.age = newAge;
-    if(newAge >= 25){
+    if (newAge >= 25) {
         this.requestNewPhoto();
     }
     return newAge;
@@ -29,8 +29,8 @@ User.prototype.setAge = function (newAge) {
 
 
 
-const user1 = new User('Tom', 17);
-const user2 = new User('Bob', 21);
+const user1 = new User('Tom', 15);
+const user2 = new User('Bob', 30);
 
 //console.log(user1);
 //user1.sayHi();
