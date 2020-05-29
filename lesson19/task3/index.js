@@ -4,7 +4,7 @@
     this.age = age;
 }
 User.prototype.sayHi = function () {
-    console.log(`Hi,I am ${this.name}`);
+    return console.log(`Hi,I am ${this.name}`);
 };
 
 User.prototype.requestNewPhoto = function () {
