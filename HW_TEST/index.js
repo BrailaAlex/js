@@ -46,6 +46,29 @@ function evenNumbers(arr) {
 
 console.log(evenNumbers(arr3));
 
+// REST operator
+let fun = function (...collection) {
+    console.log(collection);
+
+}
+
+
+fun(42, 'music', '25')
+number = 5;
+
+(number > 10) ? console.log('Число больше 10!') : console.log('Число меньше или равно 10');
+
+
+//CONCAT
+let a = [1,2,3,4,5];
+let b = [6,7,8,9,10];
+
+let union = a.concat(b);
+
+console.log(union);
+
+
+let name = 'hhgfg';
 
 
 
