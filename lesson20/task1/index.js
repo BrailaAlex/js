@@ -5,12 +5,12 @@ class User {
     }
         sayHi() {
             console.log(`Hi, I am ${this.name}`);
-        };
+        }
         
         requestNewPhoto () {
         
          console.log(`New photo request was sent for ${this.name}`);
-        };
+        }
         
         setAge(newAge) {
             if (newAge < 0) {
