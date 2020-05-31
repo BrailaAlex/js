@@ -3,7 +3,7 @@ class User {
         this.name = name;
         this.age = age;
     }
-        sayHi = function () {
+        sayHi() {
             console.log(`Hi, I am ${this.name}`);
         };
         
@@ -24,8 +24,8 @@ class User {
 
     }
     static createEmpty() {
-        let newUser = new User('', null)
-        return newUser;
+        let new_user = new User('', null)
+        return new_user;
     }
 
 
