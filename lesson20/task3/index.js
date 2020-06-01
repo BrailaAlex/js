@@ -9,7 +9,7 @@
     }
 
     deposit(amount) {
-        this._balance += amount;
+        return this._balance += amount;
     }
 
     withdraw(amount){
