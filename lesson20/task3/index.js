@@ -4,7 +4,7 @@
     
         _balance = 0
     
-    getBalanse(){
+    getBalance(){
         return this._balance;
     }
 
@@ -14,7 +14,7 @@
 
     withdraw(amount){
         if(amount > this._balance){
-            console.log('No enouhg funds');
+            console.log('No enough funds');
 
             return;
             
@@ -25,11 +25,11 @@
 }
 //const wallet1 = new Wallet();
 
-//console.log(wallet1.getBalanse());
+//console.log(wallet1.getBalance());
 //wallet1.deposit(500);
-//console.log(wallet1.getBalanse());
+//console.log(wallet1.getBalance());
 //wallet1.withdraw(600);
-//console.log(wallet1.getBalanse());
+//console.log(wallet1.getBalance());
 //wallet1.withdraw(100);
 
 
