@@ -28,7 +28,7 @@ function getCustomersList(obj) {
                 
     });*/
     return Object.entries(obj)
-        .map(([ id, object ]) => ({ ...object, id }))
+        .map(({ id, object }) => ({ ...object, id }))
         .sort((a, b) => a.age - b.age);
 
 
