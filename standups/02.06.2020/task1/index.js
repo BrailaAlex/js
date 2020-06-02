@@ -36,7 +36,7 @@ const sum = (a, b) => {
 //let counter = 0;
 
 
-function makeCounter() {
+export function makeCounter() {
 
     let counter = 0;
 
@@ -46,7 +46,7 @@ function makeCounter() {
 
 }
 
-let counter1 = makeCounter();
+/*let counter1 = makeCounter();
 console.log(counter1());
 console.log(counter1());
 console.log(counter1());
@@ -56,6 +56,6 @@ console.log(counter1());
 let counter2 = makeCounter();
 console.log(counter2());
 console.log(counter2());
-console.log(counter2());
+console.log(counter2());*/
 
 
