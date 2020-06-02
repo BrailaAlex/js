@@ -1,5 +1,5 @@
 
- export function clearList(){
+ export function clearList(buttonText){
     let el = document.querySelector('.categories');
     el.innerHTML = " "
 
