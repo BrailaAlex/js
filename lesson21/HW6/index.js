@@ -1,9 +1,8 @@
 
 const clearList = buttonText => {
-    let el = document.querySelector('.categories');
-    el.innerHTML = " ";
-
+    const elem = document.querySelector('.categories');
+    elem.innerHTML = "";
 }
+// clearList()
 
-//clearList();
-export {clearList}
+export { clearList }
