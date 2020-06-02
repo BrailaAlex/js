@@ -38,7 +38,7 @@ const sum = (a, b) => {
 
 function makeCounter() {
 
-    let counter = 10;
+    let counter = 0;
 
     return function () {
         return counter++;
