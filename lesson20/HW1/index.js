@@ -23,7 +23,7 @@ export class Order {
         this.dateConfirmed = new Date;
     }
     isValidType(type) {
-        if (this.type === 'Purchase' || this.type == 'Sell') {
+        if (this.type === 'Buy' || this.type == 'Sell') {
             return true
         };
         return false;
