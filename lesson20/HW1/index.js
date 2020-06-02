@@ -1,4 +1,4 @@
-class Order {
+export class Order {
     constructor(price, city, type) {
         this.price = price;
         this.city = city;
@@ -9,6 +9,8 @@ class Order {
         this.isConfirmed = false;
 
     }
+
+
     checkPrice() {
         if (this.price > 1000) {
             return false;
@@ -27,10 +29,10 @@ class Order {
         return false;
     }
 }
-const order1 = new Order(2000, 'Kiev', 'Purchase')
-const order2 = new Order(3500, 'Dnipro', 'Sale of goods')
-console.log(order1)
-console.log(order2)
+//const order1 = new Order(2000, 'Kiev', 'Purchase')
+//const order2 = new Order(3500, 'Dnipro', 'Sale of goods')
+///console.log(order1)
+//console.log(order2)
 
 
 
