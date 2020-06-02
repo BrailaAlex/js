@@ -1,7 +1,7 @@
 
-export function setButton(string){
+ export function setButton(string){
     let button = document.querySelector('body');
-    return button.innerText = `'<button>${string}</button>'`
+    return button.innerHTML = `<button>${string}</button>`
 
 }
 
