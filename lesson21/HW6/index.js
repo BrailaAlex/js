@@ -1,8 +1,9 @@
 
- export function clearList(buttonText){
+const clearList = buttonText => {
     let el = document.querySelector('.categories');
-    el.innerHTML = " "
+    el.innerHTML = " ";
 
 }
 
 //clearList();
+export {clearList}
