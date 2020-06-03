@@ -1,4 +1,4 @@
-function createButton(string) {
+export function createButton(string) {
 
     const str = document.createElement('button');
     str.textContent = `${string}`;
