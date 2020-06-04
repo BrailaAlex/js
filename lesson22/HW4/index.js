@@ -1,6 +1,8 @@
-const textElement = document.querySelector('.search__btn');
 
-const textElement2 = document.querySelector('.search__input')
+const textElem = document.querySelector('.search__btn');
+const textElem2 = document.querySelector('.search__input')
+
+
 textElem.addEventListener('click', () => {
-    console.log(textElement2.value)
-});
+    console.log(textElem2.value)
+})
