@@ -1,4 +1,4 @@
-const squaredNumber = () => {
+ export const squaredNumber = () => {
 
     const el = [...document.querySelectorAll('.number')];
     const num = el.map(el => el.dataset.number);
@@ -7,5 +7,5 @@ const squaredNumber = () => {
 
 }
 
-export {squaredNumber}
+
 //squaredNumber();
