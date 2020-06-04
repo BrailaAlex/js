@@ -1,4 +1,4 @@
- export function squaredNumber (){
+ export function squaredNumbers (){
 
     const el = [...document.querySelectorAll('.number')];
     const num = el.map(el => el.dataset.number);
@@ -8,4 +8,4 @@
 };
 
 
-//squaredNumber();
+//squaredNumbers();
