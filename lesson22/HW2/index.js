@@ -1,6 +1,6 @@
-const checkEl = document.querySelector('.text-input');
+const inputEl = document.querySelector('.text-input');
 
 
-checkEl.addEventListener('change', () => {
-    console.log(checkEl.checked)
-})
+inputEl.addEventListener('change', () => {
+    console.log(inputEl.value)
+});
