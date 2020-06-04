@@ -7,5 +7,5 @@ const squaredNumber = () => {
 
 }
 
-
+export {squaredNumber}
 //squaredNumber();
