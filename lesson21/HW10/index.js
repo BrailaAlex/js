@@ -22,4 +22,4 @@ export function manageClasses() {
 
 }
 
-manageClasses();
+//manageClasses();
