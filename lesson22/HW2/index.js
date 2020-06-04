@@ -1,6 +1,5 @@
-const inputEl = document.querySelector('.text-input');
+const inputElem = document.querySelector('.text-input');
 
-
-inputEl.addEventListener('change', () => {
-    console.log(inputEl.value)
+inputElem.addEventListener('change', () => {
+    console.log(inputElem.value)
 });
