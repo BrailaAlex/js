@@ -34,13 +34,13 @@ console.log(message);
 
 //hosting VAR example 1
 
-/*var a = 10;
+var a = 1;
 if(true){
-    var a = 50;
+    var a = 5;
     console.log(a);
-      
+     
 }
-console.log(a);*/
+console.log(a);
 
 //hosting VAR example 2
 
@@ -61,28 +61,28 @@ console.log(foo);*/
 
 //hosting VAR example 3
 
-/*var message = 'hello';
+var message = 'Hello';
 
 function print(){
     console.log(message);
-    var message = 'stop';
+    var message = 'Hi';
     
     
 }
 
 console.log(message);
-print();*/
+
 
 //scope example
 
-let message = 'hello';
+/*let message = 'hello';
 
 if (true) {
     let message = 'Hi';
     console.log(message);
 
 }
-console.log(message);
+console.log(message);*/
 
 
 
