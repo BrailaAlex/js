@@ -9,27 +9,29 @@
 let tasks = [
 
     {
-        text: 'Hello',
+        text: 'Buy milk',
         done: false,
         id: '1111'
     },
     {
-        text: 'go to the gym',
+        text: 'Visit doctor',
         done: true,
         id: '2222'
+
     },
+
     {
-        text: 'lunch',
+        text: 'Visit meat',
         done: true,
         id: '3333'
     },
     {
-        text: 'exit',
+        text: 'Pick up Tom from airport',
         done: false,
         id: '4444'
     },
     {
-        text: 'quit',
+        text: 'Visit party',
         done: false,
         id: '5555'
     },
