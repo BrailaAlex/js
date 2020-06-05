@@ -11,29 +11,29 @@ let tasks = [
     {
         text: 'Buy milk',
         done: false,
-        id: '1111'
+        id: '1'
     },
     {
         text: 'Visit doctor',
         done: true,
-        id: '2222'
+        id: '2'
 
     },
 
     {
         text: 'Visit meat',
         done: true,
-        id: '3333'
+        id: '3'
     },
     {
         text: 'Pick up Tom from airport',
         done: false,
-        id: '4444'
+        id: '4'
     },
     {
         text: 'Visit party',
         done: false,
-        id: '5555'
+        id: '5'
     },
 
 ];
