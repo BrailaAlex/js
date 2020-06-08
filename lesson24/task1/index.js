@@ -1,5 +1,5 @@
 
-  const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St']
+  const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St'];
 
 
   export const dayOfWeek = (date, days) => {
