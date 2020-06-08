@@ -1,5 +1,5 @@
 
-const weekDays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'St', 'Su'];
+ export const weekDays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'St', 'Su'];
 
 const DayOfWeek = (date, days) => {
     const day = new Date(date).getDate();
@@ -11,4 +11,3 @@ const result = DayOfWeek(new Date(2019, 0, 1), 14);
 
 console.log(result);
 
-export {DayOfWeek};
