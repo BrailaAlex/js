@@ -10,28 +10,28 @@ let tasks = [
         text: 'Visit doctor',
         done: true,
         id: '2',
-        date: new Date('2020, 5, 2')
+        date: new Date('2020, 5, 7')
     },
 
     {
         text: 'Visit meat',
         done: true,
         id: '3',
-        date: new Date('2020, 5, 1'),
+        date: new Date('2020, 5, 6'),
     },
 
     {
         text: 'Pick up Tom from airport',
         done: false,
         id: '4',
-        date: new Date('2020, 5, 10')
+        date: new Date('2020, 5, 8')
     },
 
     {
         text: 'Buy milk',
         done: false,
         id: '5',
-        date: new Date('2020, 5, 20')
+        date: new Date('2020, 6, 5')
     },
 
 ];
