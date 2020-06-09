@@ -3,35 +3,35 @@ let tasks = [
         text: 'Visit  party',
         done: false,
         id: '1',
-        date: new Date('2020, 1, 10'),
+        date: new Date('2020, 5, 1'),
     },
 
     {
         text: 'Visit doctor',
         done: true,
         id: '2',
-        date: new Date('2020, 1, 12')
+        date: new Date('2020, 5, 3')
     },
 
     {
         text: 'Visit meat',
         done: true,
         id: '3',
-        date: new Date('2020, 1, 11'),
+        date: new Date('2020, 5, 2'),
     },
 
     {
         text: 'Pick up Tom from airport',
         done: false,
         id: '4',
-        date: new Date('2020, 1, 14')
+        date: new Date('2020, 5, 4')
     },
 
     {
         text: 'Buy milk',
         done: false,
         id: '5',
-        date: new Date('2020, 2, 10')
+        date: new Date('2020, 5, 1')
     },
 
 ];
@@ -48,6 +48,7 @@ const renderTasks = tasksList => {
         .slice()
 
         .sort((a, b) => new Date(b.date) - new Date(a.date))
+
         .sort((a, b) => a.done - b.done)
 
         .map((task) => {
