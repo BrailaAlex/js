@@ -45,7 +45,7 @@
     },
 
   
-    getTimer() {
+    getTime() {
         return (`${this.minsPassed}:${this.secondsPassed < 10 ? "0" + this.secondsPassed:this.secondsPassed}`)
     },
 
