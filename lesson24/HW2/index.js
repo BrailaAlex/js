@@ -3,35 +3,35 @@ let tasks = [
         text: 'Visit  party',
         done: false,
         id: '1',
-        date: new Date('2020, 5, 5'),
+        date: new Date('2020, 1, 10'),
     },
 
     {
         text: 'Visit doctor',
         done: true,
         id: '2',
-        date: new Date('2020, 5, 7')
+        date: new Date('2020, 1, 12')
     },
 
     {
         text: 'Visit meat',
         done: true,
         id: '3',
-        date: new Date('2020, 5, 6'),
+        date: new Date('2020, 1, 11'),
     },
 
     {
         text: 'Pick up Tom from airport',
         done: false,
         id: '4',
-        date: new Date('2020, 5, 8')
+        date: new Date('2020, 1, 14')
     },
 
     {
         text: 'Buy milk',
         done: false,
         id: '5',
-        date: new Date('2020, 6, 5')
+        date: new Date('2020, 2, 10')
     },
 
 ];
