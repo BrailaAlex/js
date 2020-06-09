@@ -3,23 +3,21 @@ let endDate = new Date('09/01/2002/ 06:31:00');
 
 
 export function getDiff(startDate, endDate) {
-
-    const ms_Minut = 1000 * 60;
-    const ms_Hour = ms_Minut * 60;
-    const ms_Day = ms_Hour * 24;
+    const minut = 1000 * 60;
+    const hour = minut * 60;
+    const day = hour * 24;
 
     const time = Math.abs(startDate.getTime() - endDate.getTime());
 
-    const days = Math.floor(time / ms_Day);
-    const afterDays = time % ms_Day;
-    const hours = Math.floor(afterDays / ms_Hour);
-    const afterHours = time % ms_Hour;
-    const minutes = Math.floor(afterHours / ms_Minut);
-    const afterMinutes = time % ms_Minut;
-    const sec = Math.floor(minutes / 1000);
+    const howDays = Math.floor(time / day);
+    const afterDays = time % day;
+    const howHours = Math.floor(afterDays / hour);
+    const afterHours = time % hour;
+    const howMinutes = Math.floor(afterHours / minut);
+    const afterMinutes = time % minut;
+    const howSec = Math.floor(afterMinutes / 1000);
 
 
-    return `${days}d ${hours}h ${minutes}m ${sec}s`
+    return `${howDays}d ${howHours}h ${howMinutes}m ${howSec}s`
 }
-
 //console.log(getDiff(startDate, endDate))
