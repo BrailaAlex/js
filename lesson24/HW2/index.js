@@ -44,6 +44,7 @@ const renderTasks = tasksList => {
 
 
     listElem.innerHTML = '';
+        
     const tasksElems = tasksList
         .slice()
 
@@ -52,6 +53,7 @@ const renderTasks = tasksList => {
         .sort((a, b) => a.done - b.done)
 
         .map((task) => {
+
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
 
