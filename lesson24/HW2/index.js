@@ -1,73 +1,68 @@
-let tasks = [
-    {
-        text: 'Visit  party',
-        done: false,
-        id: '1',
-        date: new Date('2020, 5, 1'),
-    },
-
-    {
-        text: 'Visit doctor',
-        done: true,
-        id: '2',
-        date: new Date('2020, 5, 3')
-    },
-
-    {
-        text: 'Visit meat',
-        done: true,
-        id: '3',
-        date: new Date('2020, 5, 2'),
-    },
-
-    {
-        text: 'Pick up Tom from airport',
-        done: false,
-        id: '4',
-        date: new Date('2020, 5, 4')
-    },
-
-    {
-        text: 'Buy milk',
-        done: false,
-        id: '5',
-        date: new Date('2020, 5, 1')
-    },
-
+const tasks = [{
+    text: 'Buy milk',
+    done: false,
+    id: '1',
+    date: new Date(),
+    doneDate: null
+},
+{
+    text: 'Pick up Tom from airport',
+    done: false,
+    id: '2',
+    date: new Date(),
+    doneDate: null
+},
+{
+    text: 'Visit party',
+    done: false,
+    id: '3',
+    date: new Date(),
+    doneDate: null
+},
+{
+    text: 'Visit doctor',
+    done: true,
+    id: '4',
+    date: new Date(),
+    doneDate: new Date()
+},
+{
+    text: 'Buy meat',
+    done: true,
+    id: '5',
+    date: new Date(),
+    doneDate: new Date()
+},
 ];
+const listElem = document.querySelector('.list');
+const doneTask = (a, b) => {
+    if (a.done - b.done !== 0) {
+        return a.done - b.done;
 
-
-const listElem = document.querySelector('.list')
-
-const renderTasks = tasksList => {
-    const listElem = document.querySelector('.list')
-
-
+    }
+    if (a.done === true) {
+        return new Date(b.doneDate) - new Date(a.doneDate);
+    }
+    return new Date(b.date) - new Date(a.date);
+};
+const renderTasks = (tasksList) => {
     listElem.innerHTML = '';
-        
     const tasksElems = tasksList
         .slice()
-
-        .sort((a, b) => new Date(b.date) - new Date(a.date))
-
-        .sort((a, b) => a.done - b.done)
-
+        .sort(doneTask)
         .map((task) => {
-
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
-
-
-
             const checkbox = document.createElement('input');
             checkbox.setAttribute('type', 'checkbox');
-
-            checkbox.setAttribute('data-task-id', task.id);
+            checkbox.setAttribute('data-id', task.id);
             checkbox.checked = task.done;
             checkbox.classList.add('list__item-checkbox');
+
+
             if (task.done) {
                 listItemElem.classList.add('list__item_done');
-            }
+            };
             listItemElem.append(checkbox, task.text);
             return listItemElem;
         });
@@ -75,45 +70,30 @@ const renderTasks = tasksList => {
 
     listElem.append(...tasksElems);
 };
-renderTasks(tasks)
 
-
-
+renderTasks(tasks);
 listElem.addEventListener('click', updateTask);
-
 function updateTask(event) {
-
     const classes = event.target.classList;
-    if (!classes.contains('list__item-checkbox'))
-        return;
-    const tar = event.target
-    const task = tasks.find(task => task.id === event.target.dataset.taskId);
-    task.done = tar.checked
-    renderTasks(tasks)
-
+    if (!classes.contains('list__item-checkbox')) return;
+    const task = tasks.find(task => task.id === event.target.dataset.id);
+    task.done = event.target.checked;
+    task.doneDate = new Date();
+    renderTasks(tasks);
 }
-
-
-
 const createBtn = document.querySelector('.btn');
 createBtn.addEventListener('click', createTask);
-
-function createTask(event) {
-
+function createTask() {
     const input = document.querySelector('.task-input');
-    if (!input.value) { return }
-
-
+    const inputValue = input.value;
+    if (!inputValue) return;
     tasks.push({
-
-        text: input.value,
+        text: inputValue,
         done: false,
-        id: String(tasks.length + 1),
-        date: new Date()
-    })
-
+        id: `${tasks.length + 1}`,
+        date: new Date(),
+        doneDate: null
+    });
     input.value = '';
-    renderTasks(tasks)
-
+    renderTasks(tasks);
 }
-console.log(tasks)
