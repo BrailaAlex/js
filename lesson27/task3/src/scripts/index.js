@@ -1,4 +1,17 @@
-const tasks = [{
+import { initTodoListHandlers } from './todoList.js';
+import { renderTasks } from './renderer.js'
+
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    renderTasks();
+});
+
+
+
+
+
+/*const tasks = [{
     text: 'Buy milk',
     done: false,
     id: '1',
@@ -96,4 +109,4 @@ function createTask() {
     });
     input.value = '';
     renderTasks(tasks);
-}
+}*/
