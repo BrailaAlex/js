@@ -1,18 +1,27 @@
-import { renderTasks, listElem } from './render.js';
-import { setTasks, getTasks } from './storage.js'
+import { renderTasks } from './renderTask';
+import { getItem, setItem } from './storage';
 
+export const onToggleTask = (e) => {
+    const isCheckbox = e.target.classList.contains('list__item-checkbox');
 
-
-function updateTask(event) {
-    const tasks = getTasks();
-    const classes = event.target.classList;
-    if (!classes.contains('list__item-checkbox'))
+    if (!isCheckbox) {
         return;
-    const tar = event.target
-    const task = tasks.find(task => task.id === event.target.dataset.taskId);
-    task.done = tar.checked
-    task.doneDate = new Date()
-    setTasks(tasks)
-    renderTasks()
-}
-export { updateTask };
+    }
+    const tasksList = getItem('tasksList');
+    const newTasksList = tasksList.map((task) => {
+        if (task.id === e.target.dataset.id) {
+            const done = e.target.checked;
+            return {
+                ...task,
+                done,
+                doneDate: done ?
+                    new Date().toISOString() : null,
+            };
+        }
+        return task;
+    });
+
+    setItem("tasksList", newTasksList);
+
+    renderTasks();
+};
