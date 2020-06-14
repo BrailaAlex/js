@@ -1,5 +1,12 @@
-export const setItem = (key, value) => {
-    localStorage.setItem(key, JSON.stringify(value));
-};
+import { tasks } from './tasks.js';
 
-export const getItem = (key) => JSON.parse(localStorage.getItem(key));
+function getTasks() {
+    const localTasks = localStorage.getItem('tasksList');
+    return localTasks ? JSON.parse(localTasks) : tasks;
+}
+
+function setTasks(tasks) {
+    localStorage.setItem('tasksList', JSON.stringify(tasks))
+
+}
+export { getTasks, setTasks }
