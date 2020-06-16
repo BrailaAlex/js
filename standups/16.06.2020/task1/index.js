@@ -1,5 +1,5 @@
 
-function User(name, age) {
+ export function User(name, age) {
     //let user = {};
     //Object.assign(user, { name });
     //Object.assign(user, { age });
