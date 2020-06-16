@@ -29,6 +29,7 @@ User.prototype.setAge = function (value) {
     return value;
 };
 
+
 //console.log(User.prototype);
 let user1 = new User("Test", 50);
 //console.log(user1);
