@@ -8,7 +8,7 @@
 const successPromise = new Promise((resolve, reject) => {
     return resolve(67)
 },
-
+reject => reject(new Error('error')));
 
 /*
  * допишите обработчик успешного промиса (аргументы и тело ф-ции onSuccess)
@@ -16,7 +16,7 @@ const successPromise = new Promise((resolve, reject) => {
  */
 
 successPromise.then(function onSuccess(number) {
-    console.log(number ** 2);
+    console.log(number ** 2)
     
 });
 /*
