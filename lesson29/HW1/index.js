@@ -1,39 +1,17 @@
- export function shmoment(value) {
-    let currentDate = new Date(value);
+//user ={
+//userId: 'userid777',
+//email:'userid777@example.com',
+//};
 
-    let counter = {
-        add(numb, value) {
-            let addTime = {
-                milliseconds: (value) => (currentDate.setMilliseconds(currentDate.getMilliseconds() + value)),
-                seconds: (value) => (currentDate.setSeconds(currentDate.getSeconds() + value)),
-                minutes: (value) => (currentDate.setMinutes(currentDate.getMinutes() + value)),
-                hours: (value) => (currentDate.setHours(currentDate.getHours() + value)),
-                days: (value) => (currentDate.setDate(currentDate.getDate() + value)),
-                months: (value) => (currentDate.setMonth(currentDate.getMonth() + value)),
-                years: (value) => (currentDate.setFullYear(currentDate.getFullYear() + value)),
-            }
-            currentDate = new Date(addTime[numb](value));
-            return counter;
-        },
-        
-        subtract(numb, value) {
-            let time = {
-                milliseconds: (value) => (currentDate.setMilliseconds(currentDate.getMilliseconds() - value)),
-                seconds: (value) => (currentDate.setSeconds(currentDate.getSeconds() - value)),
-                minutes: (value) => (currentDate.setMinutes(currentDate.getMinutes() - value)),
-                hours: (value) => (currentDate.setHours(currentDate.getHours() - value)),
-                days: (value) => (currentDate.setDate(currentDate.getDate() - value)),
-                months: (value) => (currentDate.setMonth(currentDate.getMonth() - value)),
-                years: (value) => (currentDate.setFullYear(currentDate.getFullYear() - value)),
-            }
-            currentDate = new Date(time[numb](value));
-            return counter;
-        },
-        result() {
-            return currentDate;
-        },
+export const requestUserData = (userId, callback) => {
+    if (userId == 'broken') {
+        callback(null, 'Failed to load user data');
+        return;
     }
-    return counter;
-}
+    setTimeout(() => callback({
+        userId: userId,
+        email: `${userId}@example.com`,
+    }), Math.ceil(Math.random() * 1000));
+};
 
-//console.log(shmoment(new Date(2020, 0, 7, 17, 17, 17)).add('minutes', 2).add('days', 8).subtract('years', 1).result());
+
