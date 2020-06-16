@@ -1,34 +1,31 @@
-//add image
+/* ===> 1 <=== */
 
-export const addImage = imgSrc => {
-    const p = new Promise((resolve, reject) => {
-        const imgElem = document.createElement('img');
-        imgElem.setAttribute('alt', 'My Photo');
-        imgElem.src = imgSrc;
+/*
+ * successPromise должен зарезолвить число 67
+ * Ответьте себе на вопрос, какой тип данных имеет переменная userDataPromise
+ */
 
-        const containerElem = document.querySelector('.page');
-        containerElem.append(imgElem);
-
-        const onImageLoaded = () => {
-            const { width, height } = imgElem;
-            resolve({ width, height });
-        };
-        imgElem.addEventListener('load', onImageLoaded);
-
-        imgElem.addEventListener('error', () => reject(new Error('Image load failed')));
+const successPromise = new Promise((resolve, reject) => {
+    return resolve(67)
+},
 
 
-    });
-    return p;
-};
+/*
+ * допишите обработчик успешного промиса (аргументы и тело ф-ции onSuccess)
+ * чтобы в консоль вывелся квадрат числа, которое резолвиться из successPromise
+ */
 
+successPromise.then(function onSuccess(number) {
+    console.log(number ** 2);
+    
+});
+/*
+ * в обработчике ошибок промиса (ф-ция onError внутри .catch()) выведите в консоль текст 'I am an error'
+ * текст вывелся в консоль?
+ * подумайте почему
+ */
+successPromise.catch(function onError(error) {
 
-const imgSrc = 'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg';
-
-const result = addImage(imgSrc);
-
-result.then(data => console.log(data));
-result.catch(error => console.log(error));
-
-
-//console.log(result);
+    console.log(error)
+        
+});
