@@ -14,21 +14,18 @@ User.prototype.sayHi = function sayHi() {
 };
 
 User.prototype.requestNewPhoto = function () {
-    //...;
+    console.log(`New photo request was sent for ${this.name}`);
 };
 
 User.prototype.setAge = function (value) {
-    if(value < 0){
-        return false;
-    }
-
-    this.age = value;
-
-    if (value > 25) {
-        console.log(this);
+    if (value < 0) {
+        return false
+    };
+    this.age = newAge;
+    if (value >= 25) {
         this.requestNewPhoto();
     }
-    return value;
+    return newAge;
 };
 
 //console.log(User.prototype);
