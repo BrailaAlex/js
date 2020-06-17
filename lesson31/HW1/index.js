@@ -15,7 +15,7 @@ successPromise
     .then(number => {
         /* fix this handler */
         const squaredNumber = number * number;
-        return halfNumber;
+        return squaredNumber;
     })
     .then(result => {
         console.log(result); // 256
