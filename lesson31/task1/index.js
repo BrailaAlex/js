@@ -22,5 +22,5 @@ export const requestUserData = userId =>{
     return request;
 
 };
-requestUserData('user-1')
-.catch(error => console.log(error));
+requestUserData('broken')
+.catch(data => console.log(data));
