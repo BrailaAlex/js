@@ -60,15 +60,14 @@ number = 5;
 
 
 //CONCAT
-let a = [1,2,3,4,5];
-let b = [6,7,8,9,10];
+let a = [1, 2, 3, 4, 5];
+let b = [6, 7, 8, 9, 10];
 
 let union = a.concat(b);
 
 console.log(union);
 
 
-let name = 'hhgfg';
-
+//let name = 'hhgfg';
 
 
