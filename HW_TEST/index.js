@@ -1,6 +1,6 @@
 // method reduce => goes through the array performs operations
 //FOR COUNTING
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+/*let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 function multiplay(arr) {
     return arr.reduce((acc, el) => acc * el);
@@ -68,6 +68,6 @@ let union = a.concat(b);
 console.log(union);
 
 
-//let name = 'hhgfg';
+//let name = 'hhgfg';*/
 
 
