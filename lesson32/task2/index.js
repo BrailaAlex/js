@@ -25,7 +25,7 @@ const servers = [
 
 export const getUserASAP = userId => {
     const userUrls = servers
-    .map(serverUrl => `${serverUrl}/1/${userId}`);
+    .map(serverUrl => `${serverUrl}/1${userId}`);
 
     const requests = userUrls
     .map(userUrl => request(userUrl));
