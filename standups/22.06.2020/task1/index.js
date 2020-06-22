@@ -11,7 +11,7 @@
 //setButton('click');
 
 //part2
-const setButton = (buttonText) =>{
+export const setButton = (buttonText) =>{
 const button = document.createElement('button');
 button.textContent = buttonText;
 
