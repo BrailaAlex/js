@@ -45,3 +45,8 @@ formEl.addEventListener('submit', function (event) {
 
 });
 
+//button validation
+formEl.addEventListener("input", function () {
+    formEl.reportValidity() ? buttonEl.disabled = false : buttonEl.disabled = false;
+    errorEl.textContent = '';
+})
