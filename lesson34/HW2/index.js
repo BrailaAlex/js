@@ -1,4 +1,4 @@
-const baseUrl = 'https://5ef47069ac6d1e00168ca0c2.mockapi.io/api/v1/users';
+const baseUrl = 'https://5ef49ed5ac6d1e00168ca58c.mockapi.io/api/v1/form';
 
 //search for the desired element on the html page through the class
 const formEl = document.querySelector('.login-form');
@@ -13,7 +13,7 @@ const inputElem = [...document.querySelectorAll('form-input')]
 
 const validation = () => {
     formEl.reportValidity() ? buttonEl.disabled = false : buttonEl.disabled = true;
-    errorEl.textContent = "";
+    errorEl.textContent = '';
 };
 
 //add a handler to formEl
@@ -28,13 +28,13 @@ formEl.addEventListener('submit', function (event) {
     fetch(baseUrl, {
         method: 'POST', // REST method to save information
         headers: {
-            'Content-Type': 'application/json;charset=utf-8'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
     })
         .then(response => response.json()) //receiving a response in the format JSON
         .then(total => {
-            inputElem.map(el => el.value = '');
+            inputElem.map(el => el.value = "");
 
             buttonEl.disabled = true;
 
