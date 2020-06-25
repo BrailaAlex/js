@@ -15,7 +15,6 @@ failRequest
     .catch(function onError2(error) {
         throw new Error('Server error')
         //console.error("onError2", error.message);
-    
         //return Promise.reject(error.message);
     })
     .then(function onSuccess2(data) {
