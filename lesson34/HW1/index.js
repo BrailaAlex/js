@@ -7,26 +7,26 @@ export const getUserById = userId =>
 fetch(`${baseUrl}/${userId}`)
 .then(responce => responce.json());
 
-export function createUser(object) {
+export function createUser(obj) {
     return fetch(baseUrl, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application',
+            'Content-Type': 'application/json',
         },
-        body: JSON.stringify(object)
+        body: JSON.stringify(obj)
 
     })
 
 };
 
-export function updateUser(userId, object) {
+export function updateUser(userId, obj) {
     return fetch(`${baseUrl}/${userId}`, {
         method: 'PUT',
         headers: {
-            'Content-Type': 'application',
+            'Content-Type': 'application/json',
 
         },
-        body: JSON.stringify(object)
+        body: JSON.stringify(obj)
 
     })
 
