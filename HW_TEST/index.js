@@ -68,6 +68,6 @@ let union = a.concat(b);
 console.log(union);
 
 
-//let name = 'hhgfg';*/
+let name = 'hhgfg';*/
 
 
