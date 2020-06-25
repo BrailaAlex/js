@@ -5,7 +5,7 @@ const formEl = document.querySelector('.login-form');
 const buttonEl = document.querySelector('.submit-button');
 const errorEl = document.querySelector('.error-text');
 //search for all elements of the same class
-const inputElem = [...document.querySelectorAll('form-input')]
+const inputElem = [...document.querySelectorAll('.form-input')]
 
 
 //validate input using reportValidity using the ternary operator
