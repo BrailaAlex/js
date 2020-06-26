@@ -24,3 +24,4 @@ export const onCreateTask = () => {
         })
     const newTasksList = tasksList.concat();
     renderTasks();
+}

@@ -1,6 +1,6 @@
-const serverUrl = 'https://crudcrud.com/api/c03b4e97369f4177a7fb6233244c6406/tasks';
+const serverUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/tasks';
 
-const createTask = (taskData) =>{
+const createTask = (taskData) =>
     fetch(serverUrl, {
         method: 'POST',
         headers: {
@@ -9,24 +9,22 @@ const createTask = (taskData) =>{
         body: JSON.stringify(taskData)
 
     });
-}
 
-const createTask = (taskData) =>{
-    
-}
+
 const updateTask = (taskData) =>{
     
 }
-const deleteTask = (taskData) =>{
+const deleteTask = (taskId) =>{
     
 }
-const geteTasks = (taskData) =>{
-    debugger;
-    fetch(serverUrl)
-    .then(responce => {
-        return responce.json()
-    
-})
-.then(data => console.log(data));
-}
+ export const getTasks = () =>
+     fetch(serverUrl)
+     .then(response => {
+        return response.json()
+     })
+
+     //.then(data => console.log(data));
+     
+
+ 
     

@@ -1,4 +1,4 @@
-import { geteTasks } from './gateway'
+import {getTasks} from './gateway.js';
 
 
 const listElem = document.querySelector('.list');
@@ -14,8 +14,7 @@ const compareTasks = (a, b) => {
 const createChecbox = ({ done, id }) => {
     const checkboxElem = document.createElement('input');
     checkboxElem.setAttribute('type', 'checkbox');
-    checkboxElem.setAttribute('data-
-    id', id);
+    checkboxElem.setAttribute('data-id', id);
     checkboxElem.classList.add('list__item-checkbox');
     return checkboxElem;
 }
@@ -29,14 +28,10 @@ const createListItem = ({ text, done, id }) => {
     listItemElem.append(checkboxElem, text);
     return listItemElem;
 }
-export const renderTasks = () => {
-    debugger;
-    const tasks = geteTasks().then();
-
-    //const tasksList = getItem('tasksList') || [];
-    //listElem.innerHTML = '';
-    //const tasksElems = tasksList
-    //.sort(compareTasks)
-    // .map(createListItem);
-    //listElem.append(...tasksElems);
+export const renderTasks = (tasksList) => {
+    listElem.innerHTML = '';
+    const tasksElems = tasksList
+        .sort(compareTasks)
+        .map(createListItem);
+    listElem.append(...tasksElems);
 }

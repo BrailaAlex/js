@@ -1,8 +1,10 @@
-import
+import {renderTasks} from './render.js';
+import {getTasks} from './gateway.js';
 
 
-debugger;
-renderTasks();
+
+getTasks()
+.then(tasks => renderTasks(tasks));
 
 
-geteTasks()
+
