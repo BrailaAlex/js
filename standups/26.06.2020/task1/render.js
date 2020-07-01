@@ -26,6 +26,8 @@ const createListItem = ({ text, done, id }) => {
         listItemElem.classList.add('list__item_done');
     }
     listItemElem.append(checkboxElem, text);
+
+    //TODO 
     return listItemElem;
 }
 export const renderTasks = (tasksList) => {
@@ -33,5 +35,6 @@ export const renderTasks = (tasksList) => {
     const tasksElems = tasksList
         .sort(compareTasks)
         .map(createListItem);
+
     listElem.append(...tasksElems);
 }

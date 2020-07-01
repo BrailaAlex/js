@@ -1,6 +1,6 @@
 const serverUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/tasks';
 
-const createTask = (taskData) =>
+export const createTask = (taskData) =>
     fetch(serverUrl, {
         method: 'POST',
         headers: {
@@ -18,13 +18,11 @@ const deleteTask = (taskId) =>{
     
 }
  export const getTasks = () =>
-     fetch(serverUrl)
-     .then(response => {
-        return response.json()
-     })
-
-     //.then(data => console.log(data));
-     
-
- 
-    
+ fetch(serverUrl)
+ .then(response =>{
+     return response.json()
+ })
+ .catch(error =>{
+     alert(error);
+     return [];
+ });
