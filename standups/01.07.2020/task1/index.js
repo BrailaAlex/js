@@ -29,7 +29,7 @@ export async function getUserData(userId) {
         
         return response.json()
     } catch (error) {
-        throw new Error('Can not find a user');
+        throw new Error('Can not find a user, becuase I am not really understand, what I am doing');
 
     }
 }
